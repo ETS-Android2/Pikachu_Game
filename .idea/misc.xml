@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Repositories/Pikachu_Game/app/src/main/res/layout/activity_main.xml" value="0.17654508611955422" />
+        <entry key="..\:/Repositories/Pikachu_Game/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.20555555555555555" />
+        <entry key="..\:/Repositories/Pikachu_Game/app/src/main/res/layout/activity_game_over.xml" value="0.4" />
+        <entry key="..\:/Repositories/Pikachu_Game/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Repositories/Pikachu_Game/app/src/main/res/layout/activity_start.xml" value="0.26766304347826086" />
+        <entry key="..\:/Repositories/Pikachu_Game/app/src/main/res/layout/activity_top_ten.xml" value="0.264" />
+        <entry key="..\:/Repositories/Pikachu_Game/app/src/main/res/layout/fragment_list.xml" value="0.12715298885511653" />
+        <entry key="..\:/Repositories/Pikachu_Game/app/src/main/res/layout/fragment_map.xml" value="0.12681159420289856" />
+        <entry key="..\:/Repositories/Pikachu_Game/app/src/main/res/layout/my_list.xml" value="0.6" />
       </map>
     </option>
   </component>
