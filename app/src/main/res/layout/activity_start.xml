@@ -20,9 +20,10 @@
         android:padding="50dp">
 
         <TextView
+            android:id="@+id/start_TXT_pikachu"
             android:layout_width="wrap_content"
             android:layout_height="140dp"
-            android:paddingBottom="40dp"
+            android:layout_marginBottom="50dp"
             android:text="Pikachu"
             android:textColor="@color/white"
             android:textSize="64sp"

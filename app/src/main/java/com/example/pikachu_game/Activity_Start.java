@@ -3,8 +3,11 @@ package com.example.pikachu_game;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +19,9 @@ public class Activity_Start extends AppCompatActivity {
     private Button start_BTN_play;
     private Button start_BTN_playwithSensors;
     private Button getStart_BTN_top_10;
+    private TextView start_TXT_pikachu;
+    private Animation uptodown,downtoup;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +40,17 @@ public class Activity_Start extends AppCompatActivity {
                 .load(R.drawable.background_img)
                 .centerCrop()
                 .into(panel_IMG_background);
+        start_TXT_pikachu = findViewById(R.id.start_TXT_pikachu);
         start_BTN_play = findViewById(R.id.start_BTN_play);
         getStart_BTN_top_10 = findViewById(R.id.start_BTN_top_10);
         start_BTN_playwithSensors = findViewById(R.id.start_BTN_playSensor);
+        uptodown = AnimationUtils.loadAnimation(this,R.anim.uptodownanimation);
+        downtoup = AnimationUtils.loadAnimation(this,R.anim.downtoupanimation);
+        start_TXT_pikachu.setAnimation(uptodown);
+        start_BTN_play.setAnimation(downtoup);
+        start_BTN_playwithSensors.setAnimation(downtoup);
+        getStart_BTN_top_10.setAnimation(downtoup);
+
     }
 
     private void initViews() {
