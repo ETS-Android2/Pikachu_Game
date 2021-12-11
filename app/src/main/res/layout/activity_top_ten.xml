@@ -20,54 +20,57 @@
 
         <TextView
             android:id="@+id/top_ten_LBL_title"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
             android:text="Top 10"
-            android:textSize="40dp"
-            android:textStyle="bold"
             android:textColor="@color/white"
-            />
+            android:textSize="40dp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:id="@+id/top_ten_LAY_fragLay"
-            android:layout_weight="10"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_centerInParent="true"
+            android:layout_weight="10"
             android:orientation="vertical">
 
             <FrameLayout
                 android:id="@+id/top_ten_FRG_list"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
                 android:layout_weight="1"
-                android:layout_margin="10dp"
-                android:background="@color/white"
-                />
+                android:background="@color/white" />
 
             <FrameLayout
                 android:id="@+id/top_ten_FRG_map"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
-                android:layout_margin="10dp"
-                android:background="@color/white"
-                />
+                android:background="@color/white" />
 
         </LinearLayout>
 
         <Button
             android:id="@+id/top_ten_BTN_Back"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:text="Back to start page"
-            android:textSize="13dp"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:backgroundTint="@color/design_default_color_secondary"
-            android:layout_marginBottom="5dp"
-            />
+            android:paddingTop="@dimen/cardview_compat_inset_shadow"
+            android:text="Back to start page"
+            android:textSize="13dp" />
 
     </LinearLayout>
 </RelativeLayout>

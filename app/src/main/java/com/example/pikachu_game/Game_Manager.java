@@ -14,27 +14,23 @@ import android.widget.TextView;
 public class Game_Manager {
 
     final private Activity_Game activityGame;
+    private final int MAX_LIVES = 3;
+    private final int NUM_OF_COLUMNS = 5;
+    private final int NUM_OF_GAME_TYPES = 4;
+
     private ImageView panel_IMG_background;
     private TextView timer_TXT_field;
-
     private ImageButton panel_BTN_right;
     private ImageButton panel_BTN_left;
     private ImageView[] panel_IMG_heartbeet;
     private ImageView[] panel_IMG_pikachu;
-
     private int[][] vals;
     private ImageView[][] path;
     private int current = 2;
-    private final int MAX_LIVES = 3;
-    private final int NUM_OF_COLUMNS = 5;
-    private final int NUM_OF_GAME_TYPES = 4;
     private int columnChoose;
     private int typeChoose;
     private int lives = MAX_LIVES;
-
     private boolean isAlive = true;
-    public static final String GSON_WINNER = "GSON_WINNER";
-
 
     public Game_Manager(Activity_Game activity) {
         this.activityGame = activity;
@@ -44,11 +40,6 @@ public class Game_Manager {
         updateUI();
     }
 
-
-    public TextView getTimer_TXT_field() {
-        return timer_TXT_field;
-    }
-
     private void findViews() {
         panel_BTN_left = activityGame.findViewById(R.id.panel_BTN_left);
         panel_BTN_right = activityGame.findViewById(R.id.panel_BTN_right);
@@ -56,8 +47,7 @@ public class Game_Manager {
         panel_IMG_background = activityGame.findViewById(R.id.panel_IMG_background);
         activityGame.updateBackImage(R.drawable.background_img, panel_IMG_background);
 
-        // set Timer TextView
-        timer_TXT_field = activityGame.findViewById(R.id.timer);
+        timer_TXT_field = activityGame.findViewById(R.id.timer); // set Timer TextView
 
         panel_IMG_heartbeet = new ImageView[]{
                 activityGame.findViewById(R.id.panel_IMG_heartbeet1),
@@ -101,6 +91,33 @@ public class Game_Manager {
             }
         }));
     }
+
+    protected CallBackSensor callBackSensor = new CallBackSensor() {
+        @Override
+        public void moveSensorMode(float x) {
+            if (x > 4) {
+                panel_IMG_pikachu[current].setVisibility(View.INVISIBLE);
+                current = 0;
+                panel_IMG_pikachu[current].setVisibility(View.VISIBLE);
+            } else if (x < 4 && x > 2) {
+                panel_IMG_pikachu[current].setVisibility(View.INVISIBLE);
+                current = 1;
+                panel_IMG_pikachu[current].setVisibility(View.VISIBLE);
+            } else if (x < 2 && x > -2) {
+                panel_IMG_pikachu[current].setVisibility(View.INVISIBLE);
+                current = 2;
+                panel_IMG_pikachu[current].setVisibility(View.VISIBLE);
+            } else if (x < -2 && x > -4) {
+                panel_IMG_pikachu[current].setVisibility(View.INVISIBLE);
+                current = 3;
+                panel_IMG_pikachu[current].setVisibility(View.VISIBLE);
+            } else {
+                panel_IMG_pikachu[current].setVisibility(View.INVISIBLE);
+                current = 4;
+                panel_IMG_pikachu[current].setVisibility(View.VISIBLE);
+            }
+        }
+    };
 
     private void initLogic() {
         for (int i = 0; i < vals.length; i++) {
@@ -181,8 +198,7 @@ public class Game_Manager {
             if (lives == 0) {
                 isAlive = false;
             }
-        }
-        else if(vals[3][current] == 2) {
+        } else if (vals[3][current] == 2) {
             if (lives < 3) {
                 vibrate(300);
                 panel_IMG_heartbeet[lives].setVisibility(View.VISIBLE);
@@ -199,4 +215,18 @@ public class Game_Manager {
     public boolean isAlive() {
         return isAlive;
     }
+
+    public ImageButton getPanel_BTN_left() {
+        return panel_BTN_left;
+    }
+
+    public ImageButton getPanel_BTN_right() {
+        return panel_BTN_right;
+    }
+
+    public TextView getTimer_TXT_field() {
+        return timer_TXT_field;
+    }
+
 }
+

@@ -1,4 +1,5 @@
 package com.example.pikachu_game;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -6,12 +7,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.bumptech.glide.Glide;
 
 public class Activity_Start extends AppCompatActivity {
 
     private ImageView panel_IMG_background;
     private Button start_BTN_play;
+    private Button start_BTN_playwithSensors;
     private Button getStart_BTN_top_10;
 
     @Override
@@ -31,8 +34,9 @@ public class Activity_Start extends AppCompatActivity {
                 .load(R.drawable.background_img)
                 .centerCrop()
                 .into(panel_IMG_background);
-        start_BTN_play= findViewById(R.id.start_BTN_play);
-        getStart_BTN_top_10 =findViewById(R.id.start_BTN_top_10);
+        start_BTN_play = findViewById(R.id.start_BTN_play);
+        getStart_BTN_top_10 = findViewById(R.id.start_BTN_top_10);
+        start_BTN_playwithSensors = findViewById(R.id.start_BTN_playSensor);
     }
 
     private void initViews() {
@@ -40,9 +44,13 @@ public class Activity_Start extends AppCompatActivity {
         start_BTN_play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(getApplicationContext(), Activity_Game.class);
-                startActivity(myIntent);
-                finish();
+                startGame(false);
+            }
+        });
+        start_BTN_playwithSensors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startGame(true);
             }
         });
 
@@ -54,6 +62,15 @@ public class Activity_Start extends AppCompatActivity {
                 finish();
             }
         });
+    }
 
+    private void startGame(boolean sensorMode) {
+        Intent myIntent = new Intent(this, Activity_Game.class);
+        Bundle bundle = new Bundle();
+        bundle.putBoolean(Activity_Game.SENSOR_MODE, sensorMode);
+
+        myIntent.putExtras(bundle);
+        startActivity(myIntent);
+        finish();
     }
 }

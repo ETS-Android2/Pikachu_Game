@@ -63,19 +63,20 @@
         android:layout_marginTop="50dp"
         android:backgroundTint="#1B37D5"
         android:text="Play Again" />
+
     <Button
         android:id="@+id/game_over_BTN_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/game_over_BTN_restart"
         android:layout_centerHorizontal="true"
-        android:text="Go Back To Home Page"
-        android:backgroundTint="#1B37D5"/>
+        android:backgroundTint="#1B37D5"
+        android:text="Go Back To Home Page" />
 
     <LinearLayout
-        android:id="@+id/winner_LAY_name"
+        android:id="@+id/player_LAY_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_below="@+id/game_over_BTN_back"
         android:layout_marginTop="50dp"
         android:gravity="center"
@@ -83,23 +84,27 @@
 
         <EditText
             android:id="@+id/winner_EDT_name"
-            android:layout_width="97dp"
-            android:layout_height="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/title"
             android:layout_gravity="center"
             android:layout_marginHorizontal="20dp"
+            android:layout_weight="3"
             android:hint="NAME"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textColorHint="@color/material_on_primary_emphasis_medium"
+            android:backgroundTint="#FFFFFF"
             android:textSize="20sp" />
+
 
         <Button
             android:id="@+id/winner_BTN_save"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginHorizontal="10dp"
+            android:layout_weight="3"
             android:backgroundTint="@color/white"
             android:text="save"
             android:textColor="@color/black"
