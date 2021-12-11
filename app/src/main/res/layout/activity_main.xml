@@ -73,7 +73,7 @@
                 android:id="@+id/panel_IMG_00"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -82,7 +82,7 @@
                 android:id="@+id/panel_IMG_01"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -91,7 +91,25 @@
                 android:id="@+id/panel_IMG_02"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball_icon"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/panel_IMG_03"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball_icon"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/panel_IMG_04"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -108,7 +126,7 @@
                 android:id="@+id/panel_IMG_10"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -117,7 +135,7 @@
                 android:id="@+id/panel_IMG_11"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -126,7 +144,25 @@
                 android:id="@+id/panel_IMG_12"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball_icon"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/panel_IMG_13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball_icon"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/panel_IMG_14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -143,7 +179,7 @@
                 android:id="@+id/panel_IMG_20"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -152,7 +188,7 @@
                 android:id="@+id/panel_IMG_21"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -162,6 +198,24 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball_icon"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/panel_IMG_23"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball_icon"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/panel_IMG_24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -179,7 +233,7 @@
                 android:id="@+id/panel_IMG_30"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -188,7 +242,7 @@
                 android:id="@+id/panel_IMG_31"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -197,7 +251,25 @@
                 android:id="@+id/panel_IMG_32"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball_icon"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/panel_IMG_33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:src="@drawable/pokeball_icon"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/panel_IMG_34"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
                 android:layout_weight="1"
                 android:src="@drawable/pokeball_icon"
                 android:visibility="visible" />
@@ -214,8 +286,8 @@
                 android:id="@+id/panel_BTN_left"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.8"
-                android:layout_margin="30dp"
+                android:layout_weight="0.5"
+                android:layout_margin="35dp"
                 android:background="@drawable/left_button" />
 
             <ImageView
@@ -230,8 +302,8 @@
                 android:id="@+id/panel_BTN_right"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.8"
-                android:layout_margin="30dp"
+                android:layout_weight="0.5"
+                android:layout_margin="35dp"
                 android:background="@drawable/right_button" />
 
         </LinearLayout>
@@ -244,15 +316,24 @@
         android:layout_width="match_parent"
         android:layout_height="130dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="145dp"
         android:orientation="horizontal"
         android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/panel_IMG_main_leftleft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/pikachu_back_img"
+            android:visibility="invisible" />
 
         <ImageView
             android:id="@+id/panel_IMG_main_left"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:src="@drawable/pikachu_back_img"
             android:visibility="invisible" />
@@ -261,7 +342,7 @@
             android:id="@+id/panel_IMG_main_mid"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:src="@drawable/pikachu_back_img"
             android:visibility="visible" />
@@ -270,7 +351,16 @@
             android:id="@+id/panel_IMG_main_right"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/pikachu_back_img"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/panel_IMG_main_rightright"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:src="@drawable/pikachu_back_img"
             android:visibility="invisible" />
