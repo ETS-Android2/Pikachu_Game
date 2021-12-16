@@ -1,5 +1,4 @@
 <h1>Description:</h1>
-
 Mobile game application developed in Android Studio, featuring a Pikachu trying to avoid pokeballs.<br />
 The Application contains design with activities and fragments, logic, and use of various mobile features like Location, Sensors, and Shared Preference DB.
 
@@ -25,7 +24,12 @@ Menu contains 2 Button for each mode in the game: <br />
 </p>
 
 <h2>Top 10 list:</h2>
+On that screen, you will see 2 fragments. <br />On the top one, you can see the top 10 games played, the score, and by whom they were played.
+On the second one, you will see a Google Map fragment pinned to the player game location.
+
 <p align="center">
 <img src="https://github.com/MayaGembom/Pikachu_Game/blob/master/Screenshots/activity_top_ten.jpg" width="200" height="380" border="10"/>
 </p>
 
+
+Enjoy.
