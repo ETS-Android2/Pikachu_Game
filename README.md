@@ -1,6 +1,6 @@
 <h1>Description:</h1>
 
-Mobile game application developed in Android Studio, featuring a Pikachu trying to avoid pokeballs.
+Mobile game application developed in Android Studio, featuring a Pikachu trying to avoid pokeballs.<br />
 The Application contains design with activities and fragments, logic, and use of various mobile features like Location, Sensors, and Shared Preference DB.
 
 <p align="center">
