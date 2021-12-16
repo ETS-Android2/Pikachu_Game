@@ -12,7 +12,7 @@ Menu contains 2 Button for each mode in the game: <br />
 :sparkles: <strong>PLAY GAME </strong> <br />
  The Player needs to move Pikachu using two buttons (Right or Left) with the goal of avoiding the pokeballs.<br />
 :sparkles: <strong> PLAY SENSORS GAME </strong> (No Buttons, Just Sensors).  <br />
-And 1 Button which redirects to the high scores screen: <br />
+1 Button which redirects to the high scores screen: <br />
 :sparkles: <strong> TOP 10 </strong> players' scores screen.
 
 <p align="center">
@@ -23,3 +23,9 @@ And 1 Button which redirects to the high scores screen: <br />
 <p align="center">
 <img src="https://github.com/MayaGembom/Pikachu_Game/blob/master/Screenshots/PLAY_GAME.gif" width="200" height="380" border="10"/>
 </p>
+
+<h2>Top 10 list:</h2>
+<p align="center">
+<img src="https://github.com/MayaGembom/Pikachu_Game/blob/master/Screenshots/activity_top_ten.jpg" width="200" height="380" border="10"/>
+</p>
+
